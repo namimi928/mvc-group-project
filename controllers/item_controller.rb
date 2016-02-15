@@ -5,4 +5,10 @@ class ItemController
     item_name = gets.chomp
     item = Item.new(item_name)
   end
+
+  def list_items
+    view = ItemView.new
+    view.render_item_list
+    puts Item.list_item_names
+  end
 end
