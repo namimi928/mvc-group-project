@@ -1,4 +1,4 @@
-items = ["The Mona Lisa", "Donald Trump's Twitter Account", "The Holy Grail", "Jeff Katz Autograph"]
+items = ["The Mona Lisa", "Donald Trump's Twitter Account", "Jeff Katz Autograph"]
 buyers = ["Joe", "Nancy"]
 
 items.each do |item|

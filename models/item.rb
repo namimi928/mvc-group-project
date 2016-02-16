@@ -1,7 +1,6 @@
 class Item
 
-  attr_accessor :name, :bids, :sold, :interest, :highest_bid
-
+  attr_accessor :name, :bids, :sold, :interest, :highest_bid, :highest_bidder
   @@all = []
 
   def initialize(name)
@@ -10,6 +9,7 @@ class Item
     @sold = false
     @interest = true
     @highest_bid = 0
+    @highest_bidder = ""
     @@all << self
   end
 

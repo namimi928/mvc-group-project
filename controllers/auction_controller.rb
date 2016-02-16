@@ -7,7 +7,7 @@ class AuctionController
 
   def create_auction
     auction = Auction.new(Buyer.all, Item.all)
-    auction.start_bidding
+    auction.run_auction
     puts "That concludes the bidding!"
   end
 end
