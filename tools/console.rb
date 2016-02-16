@@ -5,13 +5,15 @@ require_relative "seed.rb"
 commands = <<-LIST
 - Enter '1' to register a new buyer.
 - Enter '2' to see a list of buyers.
+- Enter '3' to add an auction item. (not coded)
 - Enter '4' to see a list of items.
+- Enter '5' to start the bidding!
 - Type 'exit' to leave the Auction House.
 LIST
 
 #buyer_controller.welcome_and_add_visitor
 puts "Welcome to the Slack Beef Auction House!"
-puts "What would you like to do? Enter:"
+puts "What would you like to do?"
 puts commands
 
 input = nil
@@ -31,6 +33,9 @@ while input != 'exit'
   when '4'
     controller = ItemController.new
     controller.list_items
+  when '5'
+    auction = Auction.new(Buyer.all, Item.all)
+    auction.start_bidding
   when 'help'
     puts commands
   when 'exit'
@@ -39,14 +44,6 @@ while input != 'exit'
     puts "Please enter a valid command."
   end
 end
-
-
-
-
-
-
-
-
 
 
 

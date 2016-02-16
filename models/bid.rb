@@ -4,8 +4,6 @@ class Bid
 
   def initialize(amount)
     @amount = amount
-
-    # binding.pry
   end
   
   def is_valid?

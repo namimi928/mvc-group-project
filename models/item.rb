@@ -1,6 +1,6 @@
 class Item
 
-  attr_accessor :name, :bids, :sold, :highest_bid
+  attr_accessor :name, :bids, :sold, :interest, :highest_bid
 
   @@all = []
 
@@ -8,6 +8,7 @@ class Item
     @name = name
     @bids = []
     @sold = false
+    @interest = true
     @highest_bid = 0
     @@all << self
   end
