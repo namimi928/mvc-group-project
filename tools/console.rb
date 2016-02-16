@@ -34,8 +34,8 @@ while input != 'exit'
     controller = ItemController.new
     controller.list_items
   when '5'
-    auction = Auction.new(Buyer.all, Item.all)
-    auction.start_bidding
+    controller = AuctionController.new
+    controller.create_auction
   when 'help'
     puts commands
   when 'exit'

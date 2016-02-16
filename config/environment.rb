@@ -5,6 +5,7 @@ require_relative '../models/auction.rb'
 require_relative '../controllers/buyer_controller.rb'
 require_relative '../controllers/item_controller.rb'
 require_relative '../controllers/bid_controller.rb'
+require_relative '../controllers/auction_controller.rb'
 require_relative '../views/buyer_view.rb'
 require_relative '../views/item_view.rb'
 
